@@ -8,7 +8,17 @@
 
 using namespace std;
 
- 
+int linearSearch(auto data, auto key)//prototype
+{
+	for(int i = 0; i < data.size();i++)
+	{
+		if (data[i] == key)
+		{
+			return i;
+		}
+	}
+	return -1;
+} 
 
 int main()
 
